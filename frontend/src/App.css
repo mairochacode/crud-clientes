@@ -1,0 +1,145 @@
+/* === RESET === */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: linear-gradient(135deg, #f3f4f6, #e5e7eb);
+  min-height: 100vh;
+}
+
+/* === CONTAINER PRINCIPAL (agora pega a tela inteira) === */
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 3rem 2rem;
+}
+
+/* === TÍTULOS === */
+h1 {
+  font-size: 2.4rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 2rem;
+}
+
+h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 1rem;
+}
+
+/* === CARDS === */
+.card {
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 1rem;
+  box-shadow: 0 18px 35px rgba(0, 0, 0, 0.08);
+  margin-bottom: 2rem;
+}
+
+/* FORMULÁRIO */
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+form input {
+  padding: 0.8rem 0.9rem;
+  border-radius: 0.7rem;
+  border: 1px solid #d1d5db;
+  background: #f9fafb;
+  font-size: 0.95rem;
+}
+
+form input:focus {
+  border-color: #2563eb;
+  background: #ffffff;
+  box-shadow: 0 0 0 1px rgba(37, 99, 235, 0.25);
+}
+
+/* BOTÕES */
+button {
+  border: none;
+  padding: 0.65rem 1.3rem;
+  border-radius: 999px;
+  cursor: pointer;
+  background: #2563eb;
+  color: #ffffff;
+  font-weight: 600;
+  font-size: 0.9rem;
+  transition: 0.2s ease;
+}
+
+button:hover {
+  background: #1e40af;
+  transform: translateY(-1px);
+}
+
+button.delete {
+  background: #ea4d4d;
+}
+
+button.delete:hover {
+  background: #d93838;
+}
+
+/* === LISTA DE CLIENTES VISÍVEL === */
+.card.table-card {
+  background: #f1f5f9; /* cinza claro */
+}
+
+/* TABELA */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 0.8rem;
+  font-size: 0.92rem;
+}
+
+th,
+td {
+  padding: 0.75rem 0.4rem;
+  text-align: left;
+  color: #111827;
+}
+
+form input {
+  color: #111827 !important; /* preto */
+}
+
+form input::placeholder {
+  color: #9ca3af; /* cinza suave para placeholder */
+}
+
+/* Cabeçalho */
+th {
+  text-transform: uppercase;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #374151;
+  border-bottom: 2px solid #cbd5e1;
+}
+
+/* Linhas alternadas */
+tbody tr:nth-child(odd) {
+  background-color: #e2e8f0; /* CINZA CLARO VISÍVEL */
+}
+
+tbody tr:nth-child(even) {
+  background-color: #f8fafc;
+}
+
+tbody tr:hover {
+  background-color: #dbeafe;
+}
+
+/* Ações */
+td:last-child {
+  white-space: nowrap;
+}
