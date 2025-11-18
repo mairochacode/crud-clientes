@@ -1,0 +1,14 @@
+# Node
+node_modules
+npm-debug.log*
+
+# Build
+dist
+build
+
+# Ambiente
+.env
+.env.*
+
+# Banco local
+backend/database.db
